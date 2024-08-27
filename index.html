@@ -7,21 +7,34 @@
     <title>Encriptador - Desencriptador</title>
 </head>
 <body>
+    <header class="encabezado">
+        <h1 class="encabezado_contenido">Encriptador/desencriptador de texto</h1>
+    </header>
     <main class="documento">
         <section class="documento_contenido">
-            <textarea class="documento_contenido_caja_de_texto" id="textoEntrada" rows="20" cols="30">Ingrese el texto aquí</textarea>
+            <textarea class="documento_contenido_caja_de_texto" id="textoEntrada" rows="15" cols="30">Ingrese el texto aquí
+            </textarea>
+            <p class="documento_contenido_mensaje">
+                <img src="./assets/signo.png"> Solo letras minúsculas y sin acentos
+            </p>
             <div class="documento_contenido_controles">
                 <button class="documento_contenido_controles_boton" onclick="encriptar();">Encriptar</button>
                 <button class="documento_contenido_controles_boton" onclick="desencriptar();">Desencriptar</button>
             </div>
         </section>
         <section class="documento_contenido">
-            <textarea class="documento_contenido_caja_de_texto" id="textoSalida" rows="20" cols="25"></textarea>
+            <textarea class="documento_contenido_caja_de_texto" id="textoSalida" rows="15" cols="25">
+            </textarea>
             <div class="documento_contenido_controles">
                 <button class="documento_contenido_controles_boton" onclick="copiar();">Copiar</button>   
             </div>
         </section>
     </main>
+    <footer class="pie_de_pagina">
+        <p class="pie_de_pagina_contenido">
+            Desarrollo realizado por:RPM
+        </p>
+    </footer>
     <script src="./js/app.js"></script>
 </body>
 </html>
