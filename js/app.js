@@ -1,4 +1,5 @@
 function encriptar(){
+    document.getElementById('mensajeInicio').style.visibility="hidden";
     let textoAEncriptar=document.getElementById('textoEntrada').value;
     let entrada=textoAEncriptar.split('');
     for (let j=0; j<entrada.length; j++){
@@ -28,6 +29,7 @@ function encriptar(){
     return;
 }
 function desencriptar(){
+    document.getElementById('mensajeInicio').style.visibility="hidden";
     let textoADesencriptar=document.getElementById('textoEntrada').value;
     let entrada=textoADesencriptar;
     entrada=entrada.replace(/ai/g,'a');
@@ -39,6 +41,7 @@ function desencriptar(){
     return;
 }
 function copiar(){
+    document.getElementById('mensajeInicio').style.visibility="visible";
     document.getElementById('textoEntrada').value="";
     let textoACopiar=document.getElementById('textoSalida').value;
     navigator.clipboard.writeText(textoACopiar);
