@@ -79,6 +79,14 @@ body{
     font-weight: 400;
     color: var(--color-terciario);
 }
+@media(max-width: 1000px){
+    .documento_contenido_controles_boton{
+        font-size: 0.75rem;
+    }
+    .documento_contenido_caja_de_texto{
+        font-size: 0.75rem;
+    }
+}
 @media(max-width: 600px){
     .encabezado{
         padding: 1% 5%;
