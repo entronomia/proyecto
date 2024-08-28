@@ -14,17 +14,20 @@
         <section class="documento_contenido">
             <textarea class="documento_contenido_caja_de_texto" id="textoEntrada" rows="15" cols="30">Ingrese el texto aquí
             </textarea>
-            <p class="documento_contenido_mensaje">
-                <img src="./assets/signo.png"> Solo letras minúsculas y sin acentos
-            </p>
+            <div class="documento_contenido_mensaje">
+                <p><img src="./assets/signo.png"> letras minúsculas y sin acentos</p>
+            </div>
             <div class="documento_contenido_controles">
                 <button class="documento_contenido_controles_boton" onclick="encriptar();">Encriptar</button>
                 <button class="documento_contenido_controles_boton" onclick="desencriptar();">Desencriptar</button>
             </div>
         </section>
         <section class="documento_contenido">
-            <textarea class="documento_contenido_caja_de_texto" id="textoSalida" rows="15" cols="25">
+            <textarea class="documento_contenido_caja_de_texto" id="textoSalida" rows="12" cols="25">
             </textarea>
+            <div class="documento_contenido_mensaje" id="mensaje-inicio">
+                <p><img src="./assets/dibujo.png" alt="dibujo de un juguete"/> Ingresa el texto a encriptar o desencriptar</p>
+            </div>
             <div class="documento_contenido_controles">
                 <button class="documento_contenido_controles_boton" onclick="copiar();">Copiar</button>   
             </div>

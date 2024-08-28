@@ -68,6 +68,10 @@ body{
     justify-content: center;
     gap: 10px;
 }
+.documento_contenido_controles_boton:hover{
+    background-color: var(--color-terciario);
+    color: var(--color-cuaternario);
+}
 .pie_de_pagina{
     background-color: var(--color-secundario);
     padding: 1% 15%;
